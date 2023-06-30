@@ -29,3 +29,5 @@
 14. **Git Cherry-pick:** Suppose you want to apply a specific commit with the hash "abc123" from one branch to another. You can use `git cherry-pick abc123` to apply the changes from the specified commit to your current branch.
 
 15. **Git Stash:** Suppose you want to temporarily save changes that are not ready to be committed. You can use `git stash save "my changes"` to save your changes to a temporary stash, and then use `git stash apply` or `git stash pop` to retrieve the changes later. This can be useful when you need to switch to a different branch to work on something else quickly, but don't want to commit your changes yet.
+
+16. **Git Revert:** Suppose you want to undo a specific commit without removing it from the commit history. You can use `git revert <commit>` to create a new commit that undoes the changes made bythe specified commit. For example, if you want to revert the changes made by the commit with the hash "abc123", you can use `git revert abc123`. This will create a new commit that undoes the changes made by "abc123" and adds it to the commit history. This is useful when you want to undo a commit but still keep a record of the changes made.
